@@ -13,7 +13,7 @@ engine.setProperty('voice', voices[1].id)  # Gunakan suara perempuan (jika mau p
 
 
 def talk(text):
-    ## Aktifkan bagian ini kalau mau pake menggunakan suara bot
+    ## Aktifkan bagian ini kalau mau pake menggunakan suara bot tersebut
     ## engine.say(text)
     ## engine.runAndWait()
     pass  
@@ -35,6 +35,7 @@ def run_assistant():
     """Logika untuk menjalankan asisten."""
     command = take_command()
     if command:
+        ## jangan lupa aktifkan bagian (talk(f)) jika mau menggunakan suara bot tersebut
         
         if 'terima kasih' in command or 'makasih' in command:
             print("Sama-sama, semoga hari Anda menyenankan!")
@@ -44,7 +45,7 @@ def run_assistant():
             print(f"Memutar lagu: {song}")
             ## talk(f"Memutar lagu {song}")
             pywhatkit.playonyt(song)
-        elif 'waktu' in command:  # "Waktu" untuk jam
+        elif 'waktu' in command:  # "Waktu" untuk mentujui jam sekarang
             time = datetime.datetime.now().strftime('%I:%M %p')
             print(f"Sekarang jam: {time}")
             ## talk(f"Sekarang jam {time}")
@@ -76,7 +77,7 @@ def run_assistant():
                 error_message = f"Tidak ada informasi tentang '{person}'."
                 print(error_message)
                 ## talk(error_message)
-        elif 'joke' in command:  # Cerita lucu
+        elif 'joke' in command:  # Cerita lucu (hanya untuk lelucon)
             joke = pyjokes.get_joke()
             print(f"Cerita lucu: {joke}")
             ## talk(joke)
