@@ -3,7 +3,7 @@ Asisten virtual berbasis suara yang dapat menjalankan beberapa perintah yang dib
 
 # Voice Assistant (Asisten Virtual Berbasis Suara)
 
-This is a Python-based voice assistant that listens to voice commands in **Indonesian** and performs various tasks, such as playing music, telling the time, searching Wikipedia, and telling jokes. The assistant uses **Speech Recognition** for voice input and **Text-to-Speech** for verbal output.
+Ini adalah asisten suara berbasis Python yang mendengarkan perintah suara dalam **Bahasa Indonesia** dan melakukan berbagai tugas, seperti memutar musik, menentukan waktu, menelusuri Wikipedia, dan menceritakan lelucon. Asisten menggunakan **Pengenalan Ucapan** untuk masukan suara dan **Teks-ke-Ucapan** untuk keluaran verbal.
 
 ## Features
 - **Voice Commands**: Recognizes commands in Indonesian, such as:
